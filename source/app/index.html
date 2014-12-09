@@ -34,34 +34,6 @@
 	</head>
 	<body class="backgroundAdjust">
   
-		<!--
-	<div id="load" class="main-container collapse">
-		<span style="position:fixed;top:20%;left:15%;">
-			<h2>Eskom<strong>Loadshed</strong></h2>
-			<h5 style="margin-left:3px; margin-top:10px;">StoneAge Technologies</h5>
-		</span>
-		<div id="messageRegion" class="alert alert-dismissable alert-info top">
-			<span data-bind="text: message"></span>
-		</div>
-		<div id="progressRegion" class="progress progress-striped active middle">
-		   <div class="progress-bar" style="width: 2%"></div>
-		</div>
-	</div>
--->
-
-<!--
-	<div class="navdrawer-container promote-layer navbar">
-			<div id="feedback">
-				<div class="navbar-header">
-					<h4 id="feedbackId" class="navbar-brand">
-						<b>Feedback</b>
-					</h4>
-				</div>
-			</div>
-	</div>
--->
-  
-   <!-- class="collapse" -->
 	<div id="main" >
 		<header class="app-bar promote-layer">
 		  <div class="app-bar-container">
@@ -74,9 +46,16 @@
 		</header> 
 
 		<!-- MENU -->
-		<div class="navdrawer-container promote-layer navbar navbar-inverse">
-		
-			 <!-- Feedback Menu Item --> 
+		<div class="navdrawer-container promote-layer navbar navbar-default">
+
+			 <div id="about">
+				<div class="navbar-header">
+					<h4 id="aboutId" class="navbar-brand">
+						<b>About</b>
+					</h4>
+				</div>
+			</div>
+
 			<div id="feedback">
 				<div class="navbar-header">
 					<h4 id="feedbackId" class="navbar-brand">
@@ -88,12 +67,15 @@
 		</div>
 		
 		<main class="main-container">
-			<div class="headerWrapper">
-				<div style="margin-left:5px;">
-					<!--<span style="float:right;" data-bind="click: displayAbout"><img src="images/weighted-web.svg" height="24" width="24" ></span>-->
+			<span style="position:fixed;top:20%;left:15%;">
+				<h2><strong>Loadshed</strong> Status </h2>
+				<div class="alert alert-success">
+				  <h5 style="margin-left:3px; margin-top:10px; text-align:center;" data-bind="text:message"></h5>
 				</div>
-			</div>
-			<!--<div class="lastSync"> Last Sync : <span data-bind="text: lastSync"></span></div>-->
+			</span>
+			<span style="position:fixed;top:60%;left:15%;">
+				<img src="images/house-with-power-lines.svg" height="20%" width="90%"/>
+			</span>
 		</main>
 
 	</div>
