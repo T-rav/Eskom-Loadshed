@@ -8,23 +8,14 @@
         init: function() {
 
             this.fixBottomMenuItemsForSmallerScreens();
-            var viewModel = new ViewModel();
-            this.fetchStatus(viewModel);
+            var viewService = new ViewService();
+            var viewModel = new ViewModel(viewService);
+
+            this.fetchStatus(viewService, viewModel);
             this.bindApp(viewModel);
         },
-        fetchStatus:function(viewModel){
-            $.ajax({
-                url : "http://stoneagetechnologies.com/eskomloadshed/status/?jsoncallback=?",
-                dataType : "jsonp",
-                crossDomain : true,
-                async: false,
-                success : function(data){
-                    viewModel.setMessageFromStatus(data);
-                },
-                error : function(){
-                    viewModel.setError();
-                }
-            }); 
+        fetchStatus:function(viewService, viewModel){
+            viewService.fetchData(viewModel);
         },
         bindApp:function(viewModel){
             

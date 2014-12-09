@@ -39,7 +39,7 @@
 		  <div class="app-bar-container">
 			<span style="float:right;">
 				<!-- <i class="fa fa-2x fa-google-plus-square" -->
-				<button style="width:25px;" ><img src="images/refresh.png"></button>
+				<button style="width:25px;" data-bind="click: refresh"><img src="images/refresh.png"></button>
 				<button style="width:35px; margin-right:10px;" class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
 			</span>
 		  </div>
@@ -51,7 +51,7 @@
 			 <div id="about">
 				<div class="navbar-header">
 					<h4 id="aboutId" class="navbar-brand">
-						<b>About</b>
+						<b data-bind="click: showAbout">About</b>
 					</h4>
 				</div>
 			</div>
@@ -59,17 +59,27 @@
 			<div id="feedback">
 				<div class="navbar-header">
 					<h4 id="feedbackId" class="navbar-brand">
-						<b>Feedback</b>
+						<b data-bind="click: bugReport">Feedback</b>
 					</h4>
 				</div>
 			</div>
+
+			<!--
+			<div id="schedule">
+				<div class="navbar-header">
+					<h4 id="schedulesId" class="navbar-brand">
+						<b>Schedule</b>
+					</h4>
+				</div>
+			</div>
+			-->
 
 		</div>
 		
 		<main class="main-container">
 			<span style="position:fixed;top:20%;left:15%;">
 				<h2><strong>Loadshed</strong> Status </h2>
-				<div class="alert alert-success">
+				<div data-bind="css: color">
 				  <h5 style="margin-left:3px; margin-top:10px; text-align:center;" data-bind="text:message"></h5>
 				</div>
 			</span>
@@ -86,11 +96,14 @@
 	<script src="libs/knockout.js"></script>
 	<script src="libs/bootstrap.min.js"></script>
 
+	<!-- Service Import -->
+	<script src="scripts/viewService.js"></script>
+
 	<!-- View Model Imports -->
-	<script src="scripts/loadViewModel.js"></script>
 	<script src="scripts/viewModel.js"></script>
 	<!-- Seed Import -->
 	<!--<script src="scripts/socialSharing.js"></script>-->
+	<script src="scripts/001_WebHelper.js"></script>
 	<script src="scripts/002_PrefsHelper.js"></script>
 	<script src="scripts/998_app.js"></script>
 	<script src="scripts/999_main.js"></script>
