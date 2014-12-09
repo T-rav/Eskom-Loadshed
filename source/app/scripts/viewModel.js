@@ -12,7 +12,9 @@
 	        return self.messageStatus === 1;
 	    }, self);
 
-		self.setMessageFromStatus = function(status){
+		self.setMessageFromStatus = function(model){
+
+			var status = model.level;
 
 			if(status === 0){
 				self.message("No load shedding.");
