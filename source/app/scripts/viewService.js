@@ -9,7 +9,7 @@ function ViewService(){
             async: false,
             success : function(data){
                 viewModel.setMessageFromStatus(data);
-                //viewModel.setMessageFromStatus({"level":0});
+                //viewModel.setMessageFromStatus({"level":3});
                 //viewModel.setError();
             },
             error : function(){
