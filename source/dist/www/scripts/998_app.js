@@ -4,16 +4,26 @@
     // example usage:
     // webHelper.openUrl("http://www.google.com")
 
+	var currentStatus = 0;
+	
     var app = {
         init: function() {
 
+			var waitTime = 900000;
+		
             this.fixBottomMenuItemsForSmallerScreens();
             var viewService = new ViewService();
             var viewModel = new ViewModel(viewService);
 
             this.fetchStatus(viewService, viewModel);
             this.bindApp(viewModel);
+			
+			this.activateMonitor(waitTime);
         },
+		activateMonitor: function(waitTime){
+			// refresh status
+			setInterval(function(){viewModel.polledRefresh();}, waitTime);
+		},
         fetchStatus:function(viewService, viewModel){
             viewService.fetchData(viewModel);
         },
@@ -21,15 +31,6 @@
             
             // -- main
             ko.applyBindings(viewModel, document.getElementById("main"));
-            
-			// https://github.com/katzer/cordova-plugin-local-notifications/#schedule-local-notifications
-			// playing around with notifications again ;)
-			/*
-			try{
-				window.plugin.notification.local.add({ message: 'Great app!' });
-			}catch(e){
-				alert(e);
-			}*/
         },
         fixBottomMenuItemsForSmallerScreens: function() {
             // if you have a ul.bottom, this helps to place it on smaller screens

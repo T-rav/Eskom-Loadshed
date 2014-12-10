@@ -3,12 +3,19 @@
 		self.viewService = viewService;
 		
 		self.message = ko.observable("Checking....");
+		self.status = ko.observable(0);
+		self.didStatusChange = ko.observable(false);
 		self.color = ko.observable("alert alert-success");
 		
 		self.setMessageFromStatus = function(model){
 
 			var status = model.level;
-
+			var currentStatus = self.status();
+			self.status(status);
+			
+			// is the status the same?
+			self.didStatusChange(currentStatus === status);
+			
 			if(status === 0){
 				self.message("No load shedding.");
 				self.color("alert alert-success");
@@ -34,7 +41,12 @@
 
 		self.refresh = function(){
 			self.message("Checking...");
-			self.viewService.fetchData(self);
+			self.viewService.fetchData(self, false);
+		};
+		
+		self.polledRefresh = function(){
+			self.message("Checking...");
+			self.viewService.fetchData(self, true);
 		};
 
 		self.bugReport = function(){
