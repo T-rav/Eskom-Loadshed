@@ -57,10 +57,7 @@
 
 		self.showAbout = function(){
 			closeMenu();
-			alert("This application monitors Eskom's load shedding status.\nIt is developed by StoneAge technologies.");
+			alert("Monitor Eskom's load shedding status.\nAnything else is futile.\n\nDeveloped by StoneAge technologies.");
 		};
-
-		// Feedback form ;)
-		// http://goo.gl/forms/wrnDilSAOo
 	}
 		
