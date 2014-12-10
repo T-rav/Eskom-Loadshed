@@ -38,6 +38,7 @@ F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\imag
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\index.html \
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\libs \
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\manifest.webapp \
+F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\plugins \
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\scripts \
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\styles \
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\css\index.css \
@@ -72,6 +73,15 @@ F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\libs
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\libs\jquery.js \
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\libs\jquery.peity.min.js \
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\libs\knockout.js \
+F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\plugins\com.phonegap.plugins.PushPlugin \
+F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\plugins\de.appplant.cordova.plugin.local-notification \
+F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.device \
+F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\plugins\com.phonegap.plugins.PushPlugin\www \
+F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\plugins\com.phonegap.plugins.PushPlugin\www\PushNotification.js \
+F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\plugins\de.appplant.cordova.plugin.local-notification\www \
+F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\plugins\de.appplant.cordova.plugin.local-notification\www\local-notification.js \
+F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.device\www \
+F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.device\www\device.js \
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\scripts\001_WebHelper.js \
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\scripts\002_PrefsHelper.js \
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\scripts\998_app.js \

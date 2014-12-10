@@ -22,6 +22,14 @@
             // -- main
             ko.applyBindings(viewModel, document.getElementById("main"));
             
+			// https://github.com/katzer/cordova-plugin-local-notifications/#schedule-local-notifications
+			// playing around with notifications again ;)
+			/*
+			try{
+				window.plugin.notification.local.add({ message: 'Great app!' });
+			}catch(e){
+				alert(e);
+			}*/
         },
         fixBottomMenuItemsForSmallerScreens: function() {
             // if you have a ul.bottom, this helps to place it on smaller screens
@@ -36,6 +44,26 @@
                 bottomList.css("position", "relative");
             }
         }
+		/*
+		registerPushNotificationHandler: function(){
+			try{
+				var pushNotification window.plugins.pushNotification; 
+				pushNotification.register(
+					function(result){
+						window.plugin.notification.local.add({ message: 'Great app! '+result});
+					},
+					function(error){
+						alert('error='+error);
+					},
+					{
+						"senderID":"wise-program-789",
+						"ecb":"onNotification"
+					}
+				);
+			}catch(e){
+				alert(e);
+			}
+		}*/
     };
 
     document.addEventListener('deviceready', function() {
