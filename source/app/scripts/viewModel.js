@@ -14,7 +14,7 @@
 			self.status(status);
 			
 			// is the status the same?
-			self.didStatusChange(currentStatus === status);
+			self.didStatusChange(currentStatus !== status);
 			
 			if(status === 0){
 				self.message("No load shedding.");

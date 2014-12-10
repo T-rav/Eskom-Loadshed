@@ -12,6 +12,7 @@
 
 	$result = array();
 	$result["level"] = $data;
+	//$result["level"] = 1;
 
 	$returnData = convertToJson($result);
 

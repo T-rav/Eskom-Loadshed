@@ -7,12 +7,13 @@ function ViewService(){
             dataType : "jsonp",
             crossDomain : true,
             async: false,
+            timeout: 1500, // in milliseconds
             success : function(data){
                 viewModel.setMessageFromStatus(data);
 				
 				// if i can and it changed, display it ;)
 				if(canDisplayMessage && viewModel.didStatusChange()){
-					window.plugin.notification.local.add({ message: self.message() });
+					window.plugin.notification.local.add({ message: viewModel.message() });
 				}
 				
                 //viewModel.setMessageFromStatus({"level":3});
