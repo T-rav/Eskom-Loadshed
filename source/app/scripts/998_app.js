@@ -9,8 +9,8 @@
     var app = {
         init: function() {
 
-			//var waitTime = 600000;
-            var waitTime = 10000;
+			var waitTime = 600000;
+            //var waitTime = 10000;
 		
             this.fixBottomMenuItemsForSmallerScreens();
             var viewService = new ViewService();
@@ -32,6 +32,7 @@
             
             // -- main
             ko.applyBindings(viewModel, document.getElementById("main"));
+            ko.applyBindings(viewModel, document.getElementById("aboutApp"));
         },
         fixBottomMenuItemsForSmallerScreens: function() {
             // if you have a ul.bottom, this helps to place it on smaller screens
