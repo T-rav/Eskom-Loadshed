@@ -9,7 +9,8 @@
     var app = {
         init: function() {
 
-			var waitTime = 900000;
+			//var waitTime = 600000;
+            var waitTime = 10000;
 		
             this.fixBottomMenuItemsForSmallerScreens();
             var viewService = new ViewService();
@@ -18,14 +19,14 @@
             this.fetchStatus(viewService, viewModel);
             this.bindApp(viewModel);
 			
-			this.activateMonitor(waitTime);
+			this.activateMonitor(viewModel, waitTime);
         },
-		activateMonitor: function(waitTime){
+		activateMonitor: function(viewModel, waitTime){
 			// refresh status
 			setInterval(function(){viewModel.polledRefresh();}, waitTime);
 		},
         fetchStatus:function(viewService, viewModel){
-            viewService.fetchData(viewModel);
+            viewService.fetchData(viewModel, false);
         },
         bindApp:function(viewModel){
             
