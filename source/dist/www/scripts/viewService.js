@@ -2,7 +2,9 @@ function ViewService(){
     var self = this;
 
     self.fetchData = function(viewModel, canDisplayMessage){
-		if(self.isNetworkAvailable()){
+		var networkStatus = self.isNetworkAvailable();
+		alert("STATUS " + networkStatus);
+		if(networkStatus){
 			$.ajax({
 				url : "http://stoneagetechnologies.com/eskomloadshed/status2/?jsoncallback=?",
 				dataType : "jsonp",
