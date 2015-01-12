@@ -41,7 +41,7 @@
 
 		self.refresh = function(){
 			self.message("Checking...");
-			self.viewService.fetchData(self, false);
+			self.viewService.fetchData(self, true);
 		};
 		
 		self.polledRefresh = function(){
