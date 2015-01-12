@@ -57,6 +57,7 @@ F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\imag
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\images\hamburger.svg \
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\images\house-with-power-lines.svg \
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\images\icons \
+F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\images\power_tower.svg \
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\images\refresh.png \
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\images\touch \
 F:\Systems\Tinkering\EskomLoadshed\source\dist\platforms\android\assets\www\images\icons\icons-hinted.ttf \
