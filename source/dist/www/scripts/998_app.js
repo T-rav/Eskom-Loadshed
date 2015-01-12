@@ -24,7 +24,7 @@
         },
 		activateMonitor: function(viewModel, waitTime){
 			// refresh status
-			cordova.plugins.backgroundMode.setDefaults({ text:'Monitoring Load Shedding Status.'});
+			cordova.plugins.backgroundMode.configure({silent: true});
 			cordova.plugins.backgroundMode.enable();
 			setInterval(function(){viewModel.polledRefresh();}, waitTime);
 		},
