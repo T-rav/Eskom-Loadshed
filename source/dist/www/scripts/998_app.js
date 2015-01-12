@@ -9,8 +9,8 @@
     var app = {
         init: function() {
 
-			var waitTime = 600000;
-            //var waitTime = 10000;
+			//var waitTime = 600000;
+            var waitTime = 10000;
 		
             this.fixBottomMenuItemsForSmallerScreens();
             var viewService = new ViewService();
