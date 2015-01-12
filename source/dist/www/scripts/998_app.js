@@ -24,8 +24,6 @@
         },
 		activateMonitor: function(viewModel, waitTime){
 			// refresh status
-			cordova.plugins.backgroundMode.configure({silent: true});
-			cordova.plugins.backgroundMode.enable();
 			setInterval(function(){viewModel.polledRefresh();}, waitTime);
 		},
         fetchStatus:function(viewService, viewModel){
