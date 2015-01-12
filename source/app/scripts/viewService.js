@@ -4,7 +4,7 @@ function ViewService(){
     self.fetchData = function(viewModel, canDisplayMessage){
 		if(self.isNetworkAvailable()){
 			$.ajax({
-				url : "http://stoneagetechnologies.com/eskomloadshed/status/?jsoncallback=?",
+				url : "http://stoneagetechnologies.com/eskomloadshed/status2/?jsoncallback=?",
 				dataType : "jsonp",
 				crossDomain : true,
 				async: false,
@@ -15,6 +15,8 @@ function ViewService(){
 					// if i can and it changed, display it ;)
 					if(canDisplayMessage && viewModel.didStatusChange()){
 						window.plugin.notification.local.add({ message: viewModel.message() });
+					}else{
+						alert("Can Display " + canDisplayMessage + " Status Changed " + viewModel.didStatusChange());
 					}
 					
 					//viewModel.setMessageFromStatus({"level":3});
