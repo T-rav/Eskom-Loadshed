@@ -30,7 +30,9 @@ function ViewService(){
     };
 	
 	self.isNetworkAvailable = function(){
-		var state = self.networkState;
+		var state = self.networkState();
+		
+		alert("STATE : " + state);
 		
 		if(state == Connection.NONE || Connection.UNKNOWN){
 			return false;
