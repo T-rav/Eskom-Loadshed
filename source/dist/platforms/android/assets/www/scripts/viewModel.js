@@ -57,7 +57,12 @@
 
 		self.showAbout = function(){
 			closeMenu();
-			alert("Monitor Eskom's load shedding status.\nAnything else is futile.\n\nDeveloped by StoneAge technologies.");
+			$("#aboutApp").toggleClass("collapse");
+			//alert("Monitor Eskom's load shedding status.\nAnything else is futile.\n\nDeveloped by StoneAge technologies.");
+		};
+
+		self.closeAbout = function(){
+			$("#aboutApp").toggleClass("collapse");
 		};
 	}
 		

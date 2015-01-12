@@ -19,6 +19,10 @@
                         {
                             "xml": "<feature name=\"LocalNotification\"><param name=\"android-package\" value=\"de.appplant.cordova.plugin.localnotification.LocalNotification\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -84,6 +88,12 @@
                             "xml": "<activity android:launchMode=\"singleInstance\" android:name=\"de.appplant.cordova.plugin.localnotification.ReceiverActivity\" />",
                             "count": 1
                         }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        }
                     ]
                 }
             }
@@ -94,6 +104,9 @@
             "PACKAGE_NAME": "com.stoneagetechnologies.eskomloadshed"
         },
         "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "com.stoneagetechnologies.eskomloadshed"
+        },
+        "org.apache.cordova.network-information": {
             "PACKAGE_NAME": "com.stoneagetechnologies.eskomloadshed"
         }
     },
