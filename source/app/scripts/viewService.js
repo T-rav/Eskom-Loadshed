@@ -32,9 +32,7 @@ function ViewService(){
 	self.isNetworkAvailable = function(){
 		var state = self.networkState();
 		
-		alert("STATE : " + state);
-		
-		if(state == Connection.NONE || Connection.UNKNOWN){
+		if(state === none || state === unknown){
 			return false;
 		}
 		
