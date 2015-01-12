@@ -30,6 +30,14 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/de.appplant.cordova.plugin.background-mode/www/background-mode.js",
+        "id": "de.appplant.cordova.plugin.background-mode.BackgroundMode",
+        "clobbers": [
+            "cordova.plugins.backgroundMode",
+            "plugin.backgroundMode"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.device/www/device.js",
         "id": "org.apache.cordova.device.device",
         "clobbers": [
@@ -43,6 +51,7 @@ module.exports.metadata =
     "com.phonegap.plugins.PushPlugin": "2.4.0",
     "de.appplant.cordova.plugin.local-notification": "0.7.6",
     "org.apache.cordova.network-information": "0.2.14",
+    "de.appplant.cordova.plugin.background-mode": "0.6.3",
     "org.apache.cordova.device": "0.2.14-dev"
 }
 // BOTTOM OF METADATA
