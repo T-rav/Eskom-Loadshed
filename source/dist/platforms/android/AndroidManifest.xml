@@ -9,8 +9,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver android:name="de.appplant.cordova.plugin.localnotification.Receiver" />
-        <activity android:launchMode="singleInstance" android:name="de.appplant.cordova.plugin.localnotification.ReceiverActivity" />
     </application>
     <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="19" />
 </manifest>

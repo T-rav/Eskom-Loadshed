@@ -21,7 +21,7 @@
             this.bindApp(viewModel);
 			
 			this.activateMonitor(viewModel, waitTime);
-        }
+        },
 		activateMonitor: function(viewModel, waitTime){
 			// refresh status
 			setInterval(function(){viewModel.polledRefresh();}, waitTime);
