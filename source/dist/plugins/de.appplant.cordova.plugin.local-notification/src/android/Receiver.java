@@ -131,7 +131,7 @@ public class Receiver extends BroadcastReceiver {
         		LocalNotification.unpersist(options.getId());
         	}
 			
-			nWrapper.showNotificationToast(options);
+			nWrapper.showNotificationToast(options, message);
 			fireTriggerEvent();
         } else {
 			Builder notification = builder.buildNotification(message);
