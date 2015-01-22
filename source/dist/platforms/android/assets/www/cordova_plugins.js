@@ -41,7 +41,7 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "com.phonegap.plugins.PushPlugin": "2.4.0",
-    "de.appplant.cordova.plugin.local-notification": "0.7.6",
+    "de.appplant.cordova.plugin.local-notification": "0.7.8",
     "org.apache.cordova.network-information": "0.2.14",
     "org.apache.cordova.device": "0.2.14-dev"
 }
