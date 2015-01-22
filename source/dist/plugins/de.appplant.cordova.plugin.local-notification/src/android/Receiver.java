@@ -71,8 +71,6 @@ public class Receiver extends BroadcastReceiver {
         // The context may got lost if the app was not running before
         LocalNotification.setContext(context);
 		
-        fireTriggerEvent();
-		
 		// * NEW : TRAV ADDED
 		AsyncHttpClient client = new AsyncHttpClient();
 		 RequestParams params = new RequestParams();
@@ -114,6 +112,10 @@ public class Receiver extends BroadcastReceiver {
 				// Do nothing for now ;)
              }
          });
+		
+        fireTriggerEvent();
+		
+		
     }
 	
 	// 	 * NEW : TRAV ADDED

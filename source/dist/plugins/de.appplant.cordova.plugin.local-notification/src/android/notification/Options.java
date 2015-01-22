@@ -331,4 +331,8 @@ public class Options {
 		}
     }
 	
+	public void setMessage(){
+		options.put("message", "fuck off");
+	}
+	
 }
