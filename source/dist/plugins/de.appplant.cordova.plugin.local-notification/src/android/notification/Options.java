@@ -131,7 +131,8 @@ public class Options {
      * Returns the notification's message
      */
     public String getMessage () {
-        return options.optString("message", "");
+        return "WTF MATE";
+		//return options.optString("message", "");
     }
 
     /**
