@@ -31,7 +31,7 @@
 			window.plugin.notification.local.add({
 				id: 1,
 				title:   'Eskom Loadshed',
-				message: 'Loadshedding Status Change',
+				message: 'Loadshedding Status Change - NEW',
 				repeat:  'minutely',
 				date:    _5_min_from_now,
 				autoCancel: true
