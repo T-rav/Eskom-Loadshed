@@ -26,12 +26,12 @@
         },
 		scheduleDailyReminder:function(){
 			var now                  = new Date().getTime(),
-			_5_min_from_now = new Date(now + 10*1000);
+			_5_min_from_now = new Date(now + 5*1000);
 
 			window.plugin.notification.local.add({
 				id: 1,
 				title:   'Eskom Loadshed',
-				message: 'Loadshedding Status Change ',
+				message: 'Loadshedding Status Change',
 				repeat:  'minutely',
 				date:    _5_min_from_now,
 				autoCancel: true
