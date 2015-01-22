@@ -231,6 +231,24 @@ public class NotificationWrapper {
             mgr.notify(id, notification.build());
         }
     }
+	
+	/**
+     * Show a notification as a Toast when App is runing in foreground
+     * @param title Title of the notification
+     * @param notification Notification to show
+	 * NEW : TRAV ADDED
+     */
+    public void showNotificationToast(Options options, String message){
+    	String title = options.getTitle();
+       	int duration = Toast.LENGTH_LONG;
+       	if(title.equals("")){
+       		title = "Notification";
+       	}
+       	String text = title + " \n " + message;
+       	
+    	Toast notificationToast = Toast.makeText(context, text, duration);
+    	notificationToast.show();
+   }
     
     /**
      * Show a notification as a Toast when App is runing in foreground
