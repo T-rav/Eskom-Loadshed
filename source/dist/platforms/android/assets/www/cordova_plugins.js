@@ -16,6 +16,13 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/de.appplant.cordova.plugin.local-notification/www/local-notification.js",
+        "id": "de.appplant.cordova.plugin.local-notification.LocalNotification",
+        "clobbers": [
+            "plugin.notification.local"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.device/www/device.js",
         "id": "org.apache.cordova.device.device",
         "clobbers": [
@@ -27,6 +34,7 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "org.apache.cordova.network-information": "0.2.14",
+    "de.appplant.cordova.plugin.local-notification": "0.7.8",
     "org.apache.cordova.device": "0.2.14-dev"
 }
 // BOTTOM OF METADATA

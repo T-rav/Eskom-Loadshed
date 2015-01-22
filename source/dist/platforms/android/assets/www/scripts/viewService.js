@@ -6,7 +6,7 @@ function ViewService(){
 		
 		if(networkStatus){
 			$.ajax({
-				url : "http://stoneagetechnologies.com/eskomloadshed/status2/?jsoncallback=?",
+				url : "http://stoneagetechnologies.com/eskomloadshed/status/?jsoncallback=?",
 				dataType : "jsonp",
 				crossDomain : true,
 				async: false,
@@ -15,9 +15,9 @@ function ViewService(){
 					viewModel.setMessageFromStatus(data);
 					
 					// if i can and it changed, display it ;)
-					//if(canDisplayMessage && viewModel.didStatusChange()){
-					//	window.plugin.notification.local.add({ message: viewModel.message() });
-					//}
+					if(canDisplayMessage && viewModel.didStatusChange()){
+						window.plugin.notification.local.add({ message: viewModel.message() });
+					}
 					//else{
 					//	alert("Can Display " + canDisplayMessage + " Status Changed " + viewModel.didStatusChange());
 					//}
