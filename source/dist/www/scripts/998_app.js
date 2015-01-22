@@ -10,7 +10,7 @@
         init: function() {
 
 			//var waitTime = 600000; // 10 minnutes
-			var waitTime = 300000; // 5 minutes
+			//var waitTime = 300000; // 5 minutes
             //var waitTime = 10000;
 		
             this.fixBottomMenuItemsForSmallerScreens();
@@ -19,13 +19,14 @@
 
             this.fetchStatus(viewService, viewModel);
             this.bindApp(viewModel);
+			this.initPushwoosh();
 			
-			this.activateMonitor(viewModel, waitTime);
+			//this.activateMonitor(viewModel, waitTime);
         },
-		activateMonitor: function(viewModel, waitTime){
+		//activateMonitor: function(viewModel, waitTime){
 			// refresh status
-			setInterval(function(){viewModel.polledRefresh();}, waitTime);
-		},
+		//	setInterval(function(){viewModel.polledRefresh();}, waitTime);
+		//},
         fetchStatus:function(viewService, viewModel){
             viewService.fetchData(viewModel, false);
         },
@@ -48,7 +49,7 @@
                 bottomList.css("position", "relative");
             }
         },
-		function initPushwoosh()
+		initPushwoosh:function()
 		{
 			var pushNotification = window.plugins.pushNotification;
 		 
@@ -56,7 +57,9 @@
 			document.addEventListener('push-notification', function(event) {
 				var title = event.notification.title;
 				var userData = event.notification.userdata;
-										 
+				
+				// TODO : Display title in local notification ;)
+				
 				if(typeof(userData) != "undefined") {
 					console.warn('user data: ' + JSON.stringify(userData));
 				}
