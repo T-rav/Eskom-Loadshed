@@ -6,7 +6,7 @@ function ViewService(){
 		
 		if(networkStatus){
 			$.ajax({
-				url : "http://stoneagetechnologies.com/eskomloadshed/status/?jsoncallback=?",
+				url : "http://stoneagetechnologies.com/eskomloadshed/status2/?jsoncallback=?",
 				dataType : "jsonp",
 				crossDomain : true,
 				async: false,
