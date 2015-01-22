@@ -257,7 +257,7 @@ public class NotificationWrapper {
      */
     public void showNotificationToast(Options options){
     	String title = options.getTitle();
-    	String message = options.getMessage();
+    	String message = "tOAST";
        	int duration = Toast.LENGTH_LONG;
        	if(title.equals("")){
        		title = "Notification";

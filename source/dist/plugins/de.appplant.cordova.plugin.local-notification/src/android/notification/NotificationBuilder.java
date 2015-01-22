@@ -114,9 +114,9 @@ public class NotificationBuilder {
         notification = new NotificationCompat.Builder(context)
             .setDefaults(0) // Do not inherit any defaults
             .setContentTitle(options.getTitle())
-            .setContentText(options.getMessage())
+            .setContentText("FOOBAR")
             .setNumber(options.getBadge())
-            .setTicker(options.getMessage())
+            .setTicker("FOOBAR")
             .setSmallIcon(options.getSmallIcon())
             .setLargeIcon(options.getIcon())
             .setAutoCancel(options.getAutoCancel())
@@ -130,7 +130,7 @@ public class NotificationBuilder {
 
         if (Build.VERSION.SDK_INT > 16) {
             notification.setStyle(new NotificationCompat.BigTextStyle()
-                .bigText(options.getMessage()));
+                .bigText("fooBAR"));
         }
 
         setClickEvent(notification);
