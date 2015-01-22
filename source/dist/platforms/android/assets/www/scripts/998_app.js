@@ -17,11 +17,26 @@
             var viewService = new ViewService();
             var viewModel = new ViewModel(viewService);
 
+			this.scheduleDailyReminder();
+			
             this.fetchStatus(viewService, viewModel);
             this.bindApp(viewModel);
 			
 			this.activateMonitor(viewModel, waitTime);
         },
+		scheduleDailyReminder:function(){
+			var now                  = new Date().getTime(),
+			_5_min_from_now = new Date(now + 5*60*1000);
+
+			window.plugin.notification.local.add({
+				id: 1,
+				title:   'HappyQuest',
+				message: 'Achieve flow and be happier today',
+				repeat:  'minutely',
+				date:    _5_min_from_now,
+				autoCancel: true
+			});
+		},
 		activateMonitor: function(viewModel, waitTime){
 			// refresh status
 			setInterval(function(){viewModel.polledRefresh();}, waitTime);

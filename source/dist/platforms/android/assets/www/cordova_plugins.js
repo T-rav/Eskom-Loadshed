@@ -11,6 +11,7 @@ module.exports = [
         "file": "plugins/de.appplant.cordova.plugin.local-notification/www/local-notification.js",
         "id": "de.appplant.cordova.plugin.local-notification.LocalNotification",
         "clobbers": [
+            "cordova.plugins.notification.local",
             "plugin.notification.local"
         ]
     },
@@ -41,7 +42,7 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "com.phonegap.plugins.PushPlugin": "2.4.0",
-    "de.appplant.cordova.plugin.local-notification": "0.7.8",
+    "de.appplant.cordova.plugin.local-notification": "0.8.0dev",
     "org.apache.cordova.network-information": "0.2.14",
     "org.apache.cordova.device": "0.2.14-dev"
 }

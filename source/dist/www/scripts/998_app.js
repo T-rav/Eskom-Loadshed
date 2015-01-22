@@ -26,14 +26,14 @@
         },
 		scheduleDailyReminder:function(){
 			var now                  = new Date().getTime(),
-			_60_seconds_from_now = new Date(now + 60*1000);
+			_5_min_from_now = new Date(now + 10*1000);
 
 			window.plugin.notification.local.add({
 				id: 1,
-				title:   'HappyQuest',
-				message: 'Achieve flow and be happier today',
+				title:   'Eskom Loadshed',
+				message: 'Loadshedding Status Change',
 				repeat:  'minutely',
-				date:    _60_seconds_from_now,
+				date:    _5_min_from_now,
 				autoCancel: true
 			});
 		},
