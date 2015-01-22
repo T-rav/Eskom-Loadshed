@@ -74,6 +74,7 @@ public class LocalNotification extends CordovaPlugin {
         this.manager = new Manager(context, PLUGIN_NAME);
         this.nWrapper = new NotificationWrapper(context,Receiver.class,PLUGIN_NAME,Receiver.OPTIONS);
     }
+	
     @Override
     public boolean execute (String action, final JSONArray args, final CallbackContext command) throws JSONException {
     	
