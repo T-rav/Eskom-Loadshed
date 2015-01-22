@@ -48,81 +48,35 @@
                 bottomList.css("position", "relative");
             }
         },
-		registerPushNotificationHandler: function(){
-			try { 
-                	pushNotification = window.plugins.pushNotification;
-					$("#app-status-ul").append('<li>registering ' + device.platform + '</li>');
-                	if (device.platform == 'android' || device.platform == 'Android' ||
-                        device.platform == 'amazon-fireos' ) {
-						pushNotification.register(successHandler, errorHandler, {"senderID":"661780372179","ecb":"onNotification"});		// required!
-					}
-                }catch(err){ 
-					txt="There was an error on this page.\n\n"; 
-					txt+="Error description: " + err.message + "\n\n"; 
-					alert(txt); 
-				} 
-            }
-
-            
-            // handle GCM notifications for Android
-            function onNotification(e) {
-                switch( e.event )
-                {
-                    case 'registered':
-					if ( e.regid.length > 0 )
-					{
-						$("#app-status-ul").append('<li>REGISTERED -> REGID:' + e.regid + "</li>");
-						// Your GCM push server needs to know the regID before it can push to this device
-						// here is where you might want to send it the regID for later use.
-						console.log("regID = " + e.regid);
-					}
-                    break;
-                    
-                    case 'message':
-                    	// if this flag is set, this notification happened while we were in the foreground.
-                    	// you might want to play a sound to get the user's attention, throw up a dialog, etc.
-                    	if (e.foreground)
-                    	{
-							// DO SOMETHING
-						}
-						else
-						{	// otherwise we were launched because the user touched a notification in the notification tray.
-							if (e.coldstart)
-								$("#app-status-ul").append('<li>--COLDSTART NOTIFICATION--' + '</li>');
-							else
-							$("#app-status-ul").append('<li>--BACKGROUND NOTIFICATION--' + '</li>');
-						}
-							
-						$("#app-status-ul").append('<li>MESSAGE -> MSG: ' + e.payload.message + '</li>');
-                        //android only
-						$("#app-status-ul").append('<li>MESSAGE -> MSGCNT: ' + e.payload.msgcnt + '</li>');
-                        //amazon-fireos only
-                        $("#app-status-ul").append('<li>MESSAGE -> TIMESTAMP: ' + e.payload.timeStamp + '</li>');
-                    break;
-                    
-                    case 'error':
-						$("#app-status-ul").append('<li>ERROR -> MSG:' + e.msg + '</li>');
-                    break;
-                    
-                    default:
-						$("#app-status-ul").append('<li>EVENT -> Unknown, an event was received and we do not know what it is</li>');
-                    break;
-                }
-            }
-            
-            function tokenHandler (result) {
-                $("#app-status-ul").append('<li>token: '+ result +'</li>');
-                // Your iOS push server needs to know the token before it can push to this device
-                // here is where you might want to send it the token for later use.
-            }
-			
-            function successHandler (result) {
-                $("#app-status-ul").append('<li>success:'+ result +'</li>');
-            }
-            
-            function errorHandler (error) {
-                $("#app-status-ul").append('<li>error:'+ error +'</li>');
-            }
+		function initPushwoosh()
+		{
+			var pushNotification = window.plugins.pushNotification;
+		 
+			//set push notifications handler
+			document.addEventListener('push-notification', function(event) {
+				var title = event.notification.title;
+				var userData = event.notification.userdata;
+										 
+				if(typeof(userData) != "undefined") {
+					console.warn('user data: ' + JSON.stringify(userData));
+				}
+											 
+				alert(title);
+			});
+		 
+			//initialize Pushwoosh with projectid: "GOOGLE_PROJECT_NUMBER", appid : "PUSHWOOSH_APP_ID". This will trigger all pending push notifications on start.
+			pushNotification.onDeviceReady({ projectid: "574090421044", appid : "3C3CE-832D1" });
+		 
+			//register for pushes
+			pushNotification.registerDevice(
+				function(status) {
+					var pushToken = status;
+					console.warn('push token: ' + pushToken);
+				},
+				function(status) {
+					console.warn(JSON.stringify(['failed to register ', status]));
+				}
+			);
 		}
     };
 
