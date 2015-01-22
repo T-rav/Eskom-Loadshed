@@ -75,7 +75,7 @@ public class NotificationBuilder {
             .setContentTitle(options.getTitle())
             .setContentText(newMessage)
             .setNumber(options.getBadge())
-            .setTicker(options.getMessage())
+            .setTicker(newMessage)
             .setSmallIcon(options.getSmallIcon())
             .setLargeIcon(options.getIcon())
             .setAutoCancel(options.getAutoCancel())
@@ -89,7 +89,7 @@ public class NotificationBuilder {
 
         if (Build.VERSION.SDK_INT > 16) {
             notification.setStyle(new NotificationCompat.BigTextStyle()
-                .bigText(options.getMessage()));
+                .bigText(newMessage));
         }
 
         setClickEvent(notification);
