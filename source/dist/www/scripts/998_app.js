@@ -17,25 +17,11 @@
             var viewService = new ViewService();
             var viewModel = new ViewModel(viewService);
 
-			this.scheduleDailyReminder();
-			
             this.fetchStatus(viewService, viewModel);
             this.bindApp(viewModel);
 			
 			this.activateMonitor(viewModel, waitTime);
-        },
-		scheduleDailyReminder:function(){
-			var now                  = new Date().getTime(),
-			_5_min_from_now = new Date(now + 5*1000);
-
-			window.plugin.notification.local.add({
-				title:   'Eskom Loadshed',
-				message: 'Loadshedding Status Change',
-				repeat:  'minutely',
-				date:    _5_min_from_now,
-				autoCancel: true
-			});
-		},
+        }
 		activateMonitor: function(viewModel, waitTime){
 			// refresh status
 			setInterval(function(){viewModel.polledRefresh();}, waitTime);
