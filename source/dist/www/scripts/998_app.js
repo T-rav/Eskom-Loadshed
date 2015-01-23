@@ -70,13 +70,13 @@
 												alert("message-received, Message: " + notification.Message + " , Title: " + notification.Title + " , D: " + notification.D);
 											  }
 										  });
-				/*
+				
 				document.addEventListener("backbutton", function(event){
 					try{
 						event.preventDefault();
 						document.removeEventListener('pushapps.message-received');
 						push.unRegisterDevice(function () {
-															//alert("Your device was unregistered from PushApps");
+															alert("Your device was unregistered from PushApps");
 														  }, function () {
 															//console.log("error");
 															alert("Error unregistering your device");
@@ -86,11 +86,10 @@
 						alert(error);
 					}
 				}, false);
-				*/
+				
 			}catch(e){
 				alert(e);
 			}
-    
 		}
     };
 
