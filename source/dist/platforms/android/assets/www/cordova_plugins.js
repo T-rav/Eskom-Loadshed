@@ -16,10 +16,10 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/com.pushapps.phonegap/www/pushapps.js",
-        "id": "com.pushapps.phonegap.PushApps",
+        "file": "plugins/org.apache.cordova.device/www/device.js",
+        "id": "org.apache.cordova.device.device",
         "clobbers": [
-            "PushNotification"
+            "device"
         ]
     }
 ];
@@ -27,7 +27,7 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "org.apache.cordova.network-information": "0.2.14",
-    "com.pushapps.phonegap": "1.6.0"
+    "org.apache.cordova.device": "0.2.13"
 }
 // BOTTOM OF METADATA
 });
