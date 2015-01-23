@@ -50,13 +50,11 @@
 			var GOOGLE_PROJECT_ID = "574090421044";
 			var PUSHAPPS_APP_TOKEN = "171dbd2a-7ae1-47b0-a7cd-a5c001d958a1";
 			
-			alert(GOOGLE_PROJECT_ID);
-			
-			var push = new PushNotification();
-			
 			try{ 
+				var push = new PushNotification();
+			
 				push.registerDevice(GOOGLE_PROJECT_ID, PUSHAPPS_APP_TOKEN, function (pushToken) {
-											//alert('registerDevice, push token' + pushToken);
+											alert('registerDevice, push token' + pushToken);
 										}, function (error) {
 											alert(error);
 										});
@@ -67,9 +65,9 @@
 											  
 											  var devicePlatform = device.platform;
 											  if (devicePlatform === "iOS") {
-												//alert("message-received, Message: " + notification.aps.alert + " , D: " + notification.D);
+												alert("message-received, Message: " + notification.aps.alert + " , D: " + notification.D);
 											  } else {
-												//alert("message-received, Message: " + notification.Message + " , Title: " + notification.Title + " , D: " + notification.D);
+												alert("message-received, Message: " + notification.Message + " , Title: " + notification.Title + " , D: " + notification.D);
 											  }
 										  });
 				/*
