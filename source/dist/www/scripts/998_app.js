@@ -18,7 +18,7 @@
 			 // add additional event handlers here ;)
 		   document.addEventListener("resume", function() {
 				app.refeshFromSleep();
-			},false});
+			},false);
 		},
 		refeshFromSleep:function(){
 			viewModel.polledRefresh();

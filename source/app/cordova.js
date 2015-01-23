@@ -29,6 +29,11 @@
                             }
                         }, 50);
                     }
+					
+					//add network state mock
+					if(navigator.connection == undefined){
+						navigator.connection = {};
+					}
                 }
                 return true;
             }

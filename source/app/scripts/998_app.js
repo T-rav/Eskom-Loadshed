@@ -1,30 +1,27 @@
 'use strict';
 (function() {
-    
-    // example usage:
-    // webHelper.openUrl("http://www.google.com")
 
-	var currentStatus = 0;
-	
     var app = {
         init: function() {
 
-			//var waitTime = 600000; // 10 minnutes
-			var waitTime = 300000; // 5 minutes
-            //var waitTime = 10000;
-		
             this.fixBottomMenuItemsForSmallerScreens();
             var viewService = new ViewService();
             var viewModel = new ViewModel(viewService);
 
             this.fetchStatus(viewService, viewModel);
             this.bindApp(viewModel);
-			
-			this.activateMonitor(viewModel, waitTime);
+			this.addSleepHandler();
+			this.initGCM();
+			//this.deinitGCM();
         },
-		activateMonitor: function(viewModel, waitTime){
-			// refresh status
-			setInterval(function(){viewModel.polledRefresh();}, waitTime);
+		addSleepHandler:function(){
+			 // add additional event handlers here ;)
+		   document.addEventListener("resume", function() {
+				app.refeshFromSleep();
+			},false);
+		},
+		refeshFromSleep:function(){
+			viewModel.polledRefresh();
 		},
         fetchStatus:function(viewService, viewModel){
             viewService.fetchData(viewModel, false);
@@ -47,30 +44,56 @@
             if (bottomListTop <= lastItemBottom) {
                 bottomList.css("position", "relative");
             }
-        }
-		/*
-		registerPushNotificationHandler: function(){
+        },
+		initGCM:function()
+		{
+			var GOOGLE_PROJECT_ID = "574090421044";
+			var PUSHAPPS_APP_TOKEN = "171dbd2a-7ae1-47b0-a7cd-a5c001d958a1";
+		
+			var push = new PushNotification();
+			
 			try{
-				var pushNotification window.plugins.pushNotification; 
-				pushNotification.register(
-					function(result){
-						window.plugin.notification.local.add({ message: 'Great app! '+result});
-					},
-					function(error){
-						alert('error='+error);
-					},
-					{
-						"senderID":"wise-program-789",
-						"ecb":"onNotification"
-					}
-				);
+				push.registerDevice(GOOGLE_PROJECT_ID, PUSHAPPS_APP_TOKEN, function (pushToken) {
+											alert('registerDevice, push token' + pushToken);
+										}, function (error) {
+											alert(error);
+										});
+		
+				document.removeEventListener('pushapps.message-received');
+				document.addEventListener('pushapps.message-received', function(event) { 
+											  var notification = event.notification;
+											  
+											  var devicePlatform = device.platform;
+											  if (devicePlatform === "iOS") {
+												alert("message-received, Message: " + notification.aps.alert + " , D: " + notification.D);
+											  } else {
+												alert("message-received, Message: " + notification.Message + " , Title: " + notification.Title + " , D: " + notification.D);
+											  }
+										  });
 			}catch(e){
 				alert(e);
 			}
-		}*/
+    
+		},
+		deinitGCM:function(){
+			document.addEventListener("backbutton", function(e){
+				document.removeEventListener('pushapps.message-received');
+				PushNotification.unRegisterDevice(function () {
+													alert("Your device was unregistered from PushApps");
+												  }, function () {
+													console.log("error");
+													alert("Error unregistering your device");
+												  });
+			//e.preventDefault();
+			//navigator.app.exitApp();
+			}, false);
+		}
     };
 
     document.addEventListener('deviceready', function() {
-       app.init();
+	   app.init();
     }, false);
+	
 })();
+
+
