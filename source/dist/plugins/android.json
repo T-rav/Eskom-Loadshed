@@ -17,25 +17,86 @@
                             "count": 1
                         }
                     ],
-                    "/widget": []
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"PushAppsPlugin\"><param name=\"android-package\" value=\"com.pushapps.phonegap.PushAppsPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
                 }
             },
             "AndroidManifest.xml": {
                 "parents": {
-                    "/manifest": [],
-                    "/manifest/application": [],
+                    "/manifest": [
+                        {
+                            "xml": "<permission android:name=\"com.stoneagetechnologies.eskomloadshed.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.google.android.c2dm.permission.RECEIVE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.stoneagetechnologies.eskomloadshed.permission.C2D_MESSAGE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<receiver android:name=\"com.groboot.pushapps.GCMBroadcastReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><action android:name=\"com.google.android.c2dm.intent.REGISTRATION\" /><category android:name=\"com.stoneagetechnologies.eskomloadshed\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:name=\"com.groboot.pushapps.GCMBaseIntentServiceImpl\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:configChanges=\"orientation|keyboardHidden\" android:name=\"com.groboot.pushapps.PushActivity\" />",
+                            "count": 1
+                        }
+                    ],
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
                             "count": 1
                         }
                     ],
-                    "/manifest/application/activity": []
+                    "/manifest/application/activity": [
+                        {
+                            "xml": "<intent-filter><action android:name=\"com.stoneagetechnologies.eskomloadshed.MESSAGE\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
+                            "count": 1
+                        }
+                    ]
                 }
             },
             "undefined": {
                 "parents": {
-                    "undefined": []
+                    "undefined": [
+                        {
+                            "xml": "<access origin=\"*.pushapps.mobi\" />",
+                            "count": 1
+                        }
+                    ]
                 }
             }
         }
@@ -45,6 +106,9 @@
             "PACKAGE_NAME": "com.stoneagetechnologies.eskomloadshed"
         },
         "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.stoneagetechnologies.eskomloadshed"
+        },
+        "com.pushapps.phonegap": {
             "PACKAGE_NAME": "com.stoneagetechnologies.eskomloadshed"
         }
     },
