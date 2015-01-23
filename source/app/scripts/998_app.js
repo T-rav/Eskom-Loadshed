@@ -49,6 +49,9 @@
 		{
 			var GOOGLE_PROJECT_ID = "574090421044";
 			var PUSHAPPS_APP_TOKEN = "171dbd2a-7ae1-47b0-a7cd-a5c001d958a1";
+			
+			alert(GOOGLE_PROJECT_ID);
+			
 			var push = new PushNotification();
 			
 			try{ 
