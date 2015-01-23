@@ -3,8 +3,7 @@
 
     var app = {
         init: function() {
-			var push = new PushNotification();
-			
+
             this.fixBottomMenuItemsForSmallerScreens();
             var viewService = new ViewService();
             var viewModel = new ViewModel(viewService);
@@ -12,8 +11,9 @@
             this.fetchStatus(viewService, viewModel);
             this.bindApp(viewModel);
 			this.addSleepHandler();
-			this.initGCM(push);
-			this.deinitGCM(push);
+			
+			this.initGCM();
+			//this.deinitGCM();
         },
 		addSleepHandler:function(){
 			 // add additional event handlers here ;)
@@ -46,14 +46,13 @@
                 bottomList.css("position", "relative");
             }
         },
-		initGCM:function(push)
+		initGCM:function()
 		{
 			var GOOGLE_PROJECT_ID = "574090421044";
 			var PUSHAPPS_APP_TOKEN = "171dbd2a-7ae1-47b0-a7cd-a5c001d958a1";
-		
+			var push = new PushNotification();
 			
-			
-			try{
+			try{ 
 				push.registerDevice(GOOGLE_PROJECT_ID, PUSHAPPS_APP_TOKEN, function (pushToken) {
 											alert('registerDevice, push token' + pushToken);
 										}, function (error) {
@@ -76,18 +75,17 @@
 			}
     
 		},
-		deinitGCM:function(push){
+		deinitGCM:function(){
 			document.addEventListener("backbutton", function(e){
-				e.preventDefault();
-				
 				document.removeEventListener('pushapps.message-received');
-				push.unRegisterDevice(function () {
+				PushNotification.unRegisterDevice(function () {
 													alert("Your device was unregistered from PushApps");
 												  }, function () {
 													console.log("error");
 													alert("Error unregistering your device");
 												  });
-			navigator.app.exitApp();
+			//e.preventDefault();
+			//navigator.app.exitApp();
 			}, false);
 		}
     };
