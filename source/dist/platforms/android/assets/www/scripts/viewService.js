@@ -15,9 +15,9 @@ function ViewService(){
 					viewModel.setMessageFromStatus(data);
 					
 					// if i can and it changed, display it ;)
-					if(canDisplayMessage && viewModel.didStatusChange()){
-						window.plugin.notification.local.add({ message: viewModel.message() });
-					}
+					//if(canDisplayMessage && viewModel.didStatusChange()){
+					//	window.plugin.notification.local.add({ message: viewModel.message() });
+					//}
 					//else{
 					//	alert("Can Display " + canDisplayMessage + " Status Changed " + viewModel.didStatusChange());
 					//}

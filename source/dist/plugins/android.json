@@ -11,17 +11,11 @@
                         {
                             "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
                             "count": 1
-                        },
+                        }
+                    ],
+                    "/widget": [
                         {
-                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"LocalNotification\"><param name=\"android-package\" value=\"de.appplant.cordova.plugin.localnotification.LocalNotification\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"PushPlugin\"><param name=\"android-package\" value=\"com.plugin.gcm.PushPlugin\" /></feature>",
+                            "xml": "<feature name=\"PushAppsPlugin\"><param name=\"android-package\" value=\"com.pushapps.phonegap.PushAppsPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -30,14 +24,6 @@
             "AndroidManifest.xml": {
                 "parents": {
                     "/manifest": [
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
-                            "count": 1
-                        },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
                             "count": 1
@@ -61,37 +47,49 @@
                         {
                             "xml": "<uses-permission android:name=\"com.stoneagetechnologies.eskomloadshed.permission.C2D_MESSAGE\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
                         }
                     ],
                     "/manifest/application": [
                         {
-                            "xml": "<receiver android:name=\"de.appplant.cordova.plugin.localnotification.Receiver\" />",
+                            "xml": "<receiver android:name=\"com.groboot.pushapps.GCMBroadcastReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><action android:name=\"com.google.android.c2dm.intent.REGISTRATION\" /><category android:name=\"com.stoneagetechnologies.eskomloadshed\" /></intent-filter></receiver>",
                             "count": 1
                         },
                         {
-                            "xml": "<receiver android:name=\"de.appplant.cordova.plugin.localnotification.Restore\"><intent-filter><action android:name=\"android.intent.action.BOOT_COMPLETED\" /></intent-filter></receiver>",
+                            "xml": "<service android:name=\"com.groboot.pushapps.GCMBaseIntentServiceImpl\" />",
                             "count": 1
                         },
                         {
-                            "xml": "<activity android:launchMode=\"singleInstance\" android:name=\"de.appplant.cordova.plugin.localnotification.ReceiverActivity\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<activity android:exported=\"true\" android:name=\"com.plugin.gcm.PushHandlerActivity\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<receiver android:name=\"com.plugin.gcm.CordovaGCMBroadcastReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><action android:name=\"com.google.android.c2dm.intent.REGISTRATION\" /><category android:name=\"com.stoneagetechnologies.eskomloadshed\" /></intent-filter></receiver>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<service android:name=\"com.plugin.gcm.GCMIntentService\" />",
+                            "xml": "<activity android:configChanges=\"orientation|keyboardHidden\" android:name=\"com.groboot.pushapps.PushActivity\" />",
                             "count": 1
                         }
                     ],
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application/activity": [
+                        {
+                            "xml": "<intent-filter><action android:name=\"com.stoneagetechnologies.eskomloadshed.MESSAGE\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "undefined": {
+                "parents": {
+                    "undefined": [
+                        {
+                            "xml": "<access origin=\"*.pushapps.mobi\" />",
                             "count": 1
                         }
                     ]
@@ -103,16 +101,9 @@
         "org.apache.cordova.network-information": {
             "PACKAGE_NAME": "com.stoneagetechnologies.eskomloadshed"
         },
-        "de.appplant.cordova.plugin.local-notification": {
-            "PACKAGE_NAME": "com.stoneagetechnologies.eskomloadshed"
-        },
-        "com.phonegap.plugins.PushPlugin": {
+        "com.pushapps.phonegap": {
             "PACKAGE_NAME": "com.stoneagetechnologies.eskomloadshed"
         }
     },
-    "dependent_plugins": {
-        "org.apache.cordova.device": {
-            "PACKAGE_NAME": "com.stoneagetechnologies.eskomloadshed"
-        }
-    }
+    "dependent_plugins": {}
 }

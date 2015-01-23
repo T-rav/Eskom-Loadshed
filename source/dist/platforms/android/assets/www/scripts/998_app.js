@@ -10,21 +10,21 @@
         init: function() {
 
 			//var waitTime = 600000; // 10 minnutes
-			var waitTime = 300000; // 5 minutes
+			//var waitTime = 300000; // 5 minutes
             //var waitTime = 10000;
 		
             this.fixBottomMenuItemsForSmallerScreens();
             var viewService = new ViewService();
             var viewModel = new ViewModel(viewService);
 
-            this.fetchStatus(viewService, viewModel);
+            //this.fetchStatus(viewService, viewModel);
             this.bindApp(viewModel);
+			this.initPushwoosh();
 			
-			this.activateMonitor(viewModel, waitTime);
+			//this.activateMonitor(viewModel, waitTime);
         },
-		activateMonitor: function(viewModel, waitTime){
-			// refresh status
-			setInterval(function(){viewModel.polledRefresh();}, waitTime);
+		refeshFromSleep:function(){
+			viewModel.polledRefresh();
 		},
         fetchStatus:function(viewService, viewModel){
             viewService.fetchData(viewModel, false);
@@ -47,30 +47,46 @@
             if (bottomListTop <= lastItemBottom) {
                 bottomList.css("position", "relative");
             }
-        }
-		/*
-		registerPushNotificationHandler: function(){
-			try{
-				var pushNotification window.plugins.pushNotification; 
-				pushNotification.register(
-					function(result){
-						window.plugin.notification.local.add({ message: 'Great app! '+result});
-					},
-					function(error){
-						alert('error='+error);
-					},
-					{
-						"senderID":"wise-program-789",
-						"ecb":"onNotification"
-					}
-				);
-			}catch(e){
-				alert(e);
-			}
-		}*/
+        },
+		initPushwoosh:function()
+		{
+			var pushNotification = window.plugins.pushNotification;
+		 
+			//set push notifications handler
+			document.addEventListener('push-notification', function(event) {
+				var title = event.notification.title;
+				var userData = event.notification.userdata;
+				
+				// TODO : Display title in local notification ;)
+				
+				if(typeof(userData) != "undefined") {
+					console.warn('user data: ' + JSON.stringify(userData));
+				}
+											 
+				alert(title);
+			});
+		 
+			//initialize Pushwoosh with projectid: "GOOGLE_PROJECT_NUMBER", appid : "PUSHWOOSH_APP_ID". This will trigger all pending push notifications on start.
+			pushNotification.onDeviceReady({ projectid: "574090421044", appid : "3C3CE-832D1" });
+		 
+			//register for pushes
+			pushNotification.registerDevice(
+				function(status) {
+					var pushToken = status;
+					console.warn('push token: ' + pushToken);
+				},
+				function(status) {
+					console.warn(JSON.stringify(['failed to register ', status]));
+				}
+			);
+		}
     };
 
     document.addEventListener('deviceready', function() {
        app.init();
     }, false);
+	
+	document.addEventListener("resume", function() {
+		app.refeshFromSleep();
+	},false});
 })();
