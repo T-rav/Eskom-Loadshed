@@ -11,6 +11,7 @@
             this.fetchStatus(viewService, viewModel);
             this.bindApp(viewModel);
 			this.addSleepHandler();
+			
 			this.initGCM();
 			//this.deinitGCM();
         },
@@ -51,7 +52,6 @@
 			var PUSHAPPS_APP_TOKEN = "171dbd2a-7ae1-47b0-a7cd-a5c001d958a1";
 		
 			var push = new PushNotification();
-			
 			try{
 				push.registerDevice(GOOGLE_PROJECT_ID, PUSHAPPS_APP_TOKEN, function (pushToken) {
 											alert('registerDevice, push token' + pushToken);
