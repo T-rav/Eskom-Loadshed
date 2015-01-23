@@ -74,7 +74,8 @@
 				alert(e);
 			}
     
-		},
+		}
+		/*
 		deinitGCM:function(){
 			document.addEventListener("backbutton", function(e){
 				document.removeEventListener('pushapps.message-received');
@@ -88,6 +89,7 @@
 			//navigator.app.exitApp();
 			}, false);
 		}
+		*/
     };
 
     document.addEventListener('deviceready', function() {
