@@ -3,7 +3,8 @@
 
     var app = {
         init: function() {
-
+			var push = new PushNotification();
+			
             this.fixBottomMenuItemsForSmallerScreens();
             var viewService = new ViewService();
             var viewModel = new ViewModel(viewService);
@@ -11,8 +12,8 @@
             this.fetchStatus(viewService, viewModel);
             this.bindApp(viewModel);
 			this.addSleepHandler();
-			this.initGCM();
-			//this.deinitGCM();
+			this.initGCM(push);
+			this.deinitGCM(push);
         },
 		addSleepHandler:function(){
 			 // add additional event handlers here ;)
@@ -45,41 +46,48 @@
                 bottomList.css("position", "relative");
             }
         },
-		initGCM:function()
+		initGCM:function(push)
 		{
 			var GOOGLE_PROJECT_ID = "574090421044";
 			var PUSHAPPS_APP_TOKEN = "171dbd2a-7ae1-47b0-a7cd-a5c001d958a1";
 		
-			PushNotification.registerDevice(GOOGLE_PROJECT_ID, PUSHAPPS_APP_TOKEN, function (pushToken) {
-										alert('registerDevice, push token' + pushToken);
-                                    }, function (error) {
-										alert(error);
-                                    });
-	
-			document.removeEventListener('pushapps.message-received');
-			document.addEventListener('pushapps.message-received', function(event) { 
-										  var notification = event.notification;
-										  
-										  var devicePlatform = device.platform;
-										  if (devicePlatform === "iOS") {
-											alert("message-received, Message: " + notification.aps.alert + " , D: " + notification.D);
-										  } else {
-											alert("message-received, Message: " + notification.Message + " , Title: " + notification.Title + " , D: " + notification.D);
-										  }
-									  });
+			
+			
+			try{
+				push.registerDevice(GOOGLE_PROJECT_ID, PUSHAPPS_APP_TOKEN, function (pushToken) {
+											alert('registerDevice, push token' + pushToken);
+										}, function (error) {
+											alert(error);
+										});
+		
+				document.removeEventListener('pushapps.message-received');
+				document.addEventListener('pushapps.message-received', function(event) { 
+											  var notification = event.notification;
+											  
+											  var devicePlatform = device.platform;
+											  if (devicePlatform === "iOS") {
+												alert("message-received, Message: " + notification.aps.alert + " , D: " + notification.D);
+											  } else {
+												alert("message-received, Message: " + notification.Message + " , Title: " + notification.Title + " , D: " + notification.D);
+											  }
+										  });
+			}catch(e){
+				alert(e);
+			}
     
 		},
-		deinitGCM:function(){
+		deinitGCM:function(push){
 			document.addEventListener("backbutton", function(e){
+				e.preventDefault();
+				
 				document.removeEventListener('pushapps.message-received');
-				PushNotification.unRegisterDevice(function () {
+				push.unRegisterDevice(function () {
 													alert("Your device was unregistered from PushApps");
 												  }, function () {
 													console.log("error");
 													alert("Error unregistering your device");
 												  });
-			//e.preventDefault();
-			//navigator.app.exitApp();
+			navigator.app.exitApp();
 			}, false);
 		}
     };
