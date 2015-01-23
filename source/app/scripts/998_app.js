@@ -69,9 +69,9 @@
 												//alert("message-received, Message: " + notification.Message + " , Title: " + notification.Title + " , D: " + notification.D);
 											  }
 										  });
-				document.addEventListener("backbutton", function(e){
+				document.addEventListener("backbutton", function(event){
 					try{
-						e.preventDefault();
+						event.preventDefault();
 						document.removeEventListener('pushapps.message-received');
 						push.unRegisterDevice(function () {
 															//alert("Your device was unregistered from PushApps");
@@ -80,8 +80,8 @@
 															alert("Error unregistering your device");
 														  });
 						navigator.app.exitApp();
-					}catch(e){
-						alert(e);
+					}catch(error){
+						alert(error);
 					}
 				}, false);
 			}catch(e){
