@@ -23,10 +23,9 @@
 			
 			//this.activateMonitor(viewModel, waitTime);
         },
-		//activateMonitor: function(viewModel, waitTime){
-			// refresh status
-		//	setInterval(function(){viewModel.polledRefresh();}, waitTime);
-		//},
+		refeshFromSleep:function(){
+			viewModel.polledRefresh();
+		},
         fetchStatus:function(viewService, viewModel){
             viewService.fetchData(viewModel, false);
         },
@@ -86,4 +85,8 @@
     document.addEventListener('deviceready', function() {
        app.init();
     }, false);
+	
+	document.addEventListener("resume", function() {
+		app.refeshFromSleep();
+	},false});
 })();
