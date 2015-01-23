@@ -3,7 +3,7 @@
 
     var app = {
         init: function() {
-			
+
             this.fixBottomMenuItemsForSmallerScreens();
             var viewService = new ViewService();
             var viewModel = new ViewModel(viewService);
@@ -13,6 +13,7 @@
 			this.addSleepHandler();
 			
 			this.initGCM();
+			//this.deinitGCM();
         },
 		addSleepHandler:function(){
 			 // add additional event handlers here ;)
@@ -49,10 +50,9 @@
 		{
 			var GOOGLE_PROJECT_ID = "574090421044";
 			var PUSHAPPS_APP_TOKEN = "171dbd2a-7ae1-47b0-a7cd-a5c001d958a1";
+			var push = new PushNotification();
 			
 			try{ 
-				var push = new PushNotification();
-			
 				push.registerDevice(GOOGLE_PROJECT_ID, PUSHAPPS_APP_TOKEN, function (pushToken) {
 											alert('registerDevice, push token' + pushToken);
 										}, function (error) {
@@ -70,26 +70,23 @@
 												alert("message-received, Message: " + notification.Message + " , Title: " + notification.Title + " , D: " + notification.D);
 											  }
 										  });
-				
-				document.addEventListener("backbutton", function(event){
-					try{
-						event.preventDefault();
-						document.removeEventListener('pushapps.message-received');
-						push.unRegisterDevice(function () {
-															alert("Your device was unregistered from PushApps");
-														  }, function () {
-															//console.log("error");
-															alert("Error unregistering your device");
-														  });
-						navigator.app.exitApp();
-					}catch(error){
-						alert(error);
-					}
-				}, false);
-				
 			}catch(e){
 				alert(e);
 			}
+    
+		},
+		deinitGCM:function(){
+			document.addEventListener("backbutton", function(e){
+				document.removeEventListener('pushapps.message-received');
+				PushNotification.unRegisterDevice(function () {
+													alert("Your device was unregistered from PushApps");
+												  }, function () {
+													console.log("error");
+													alert("Error unregistering your device");
+												  });
+			//e.preventDefault();
+			//navigator.app.exitApp();
+			}, false);
 		}
     };
 

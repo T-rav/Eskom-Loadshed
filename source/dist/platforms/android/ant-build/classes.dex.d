@@ -9,6 +9,11 @@
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/Restore.class \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/Receiver.class \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/LocalNotification$2.class \
+/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/pushapps/phonegap/PushAppsPlugin$2.class \
+/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/pushapps/phonegap/PushAppsPlugin.class \
+/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/pushapps/phonegap/PushAppsPlugin$4.class \
+/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/pushapps/phonegap/PushAppsPlugin$3.class \
+/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/pushapps/phonegap/PushAppsPlugin$1.class \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/stoneagetechnologies/eskomloadshed/R.class \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/stoneagetechnologies/eskomloadshed/R$string.class \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/stoneagetechnologies/eskomloadshed/R$attr.class \
@@ -26,3 +31,4 @@
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager$1.class \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager.class \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/dexedLibs/classes-30a6f397044f13b47f702bb6868d4e9c.jar \
+/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/dexedLibs/pushapps-6e1a6cee2a455011218176e9c8c3daad.jar \

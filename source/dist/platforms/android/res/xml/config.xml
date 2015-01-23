@@ -7,6 +7,10 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
+    <feature name="PushAppsPlugin">
+        <param name="android-package" value="com.pushapps.phonegap.PushAppsPlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <name>EskomLoadshed</name>
     <description>
         An application to monitor Eskom's load shedding status and notify you.
@@ -16,8 +20,4 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <feature name="PushAppsPlugin">
-        <param name="android-package" value="com.pushapps.phonegap.PushAppsPlugin" />
-        <param name="onload" value="true" />
-    </feature>
 </widget>

@@ -76,8 +76,11 @@
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/icons/icons.ttf \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/icons/icons.woff2 \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/touch/192x192.png \
+/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/com.pushapps.phonegap \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/org.apache.cordova.network-information \
+/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/com.pushapps.phonegap/www \
+/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/com.pushapps.phonegap/www/pushapps.js \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www \
@@ -100,6 +103,7 @@
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/components/_palette.scss \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/components/_global.scss \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/components/_helper.scss \
+/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/libs/pushapps.js \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/libs/jquery.js \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/libs/jquery.peity.min.js \
 /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/libs/knockout.js \
