@@ -70,16 +70,19 @@
 											  }
 										  });
 				document.addEventListener("backbutton", function(e){
-					var push = new PushNotification();
-					document.removeEventListener('pushapps.message-received');
-					push.unRegisterDevice(function () {
-														//alert("Your device was unregistered from PushApps");
-													  }, function () {
-														//console.log("error");
-														alert("Error unregistering your device");
-													  });
-				//e.preventDefault();
-				//navigator.app.exitApp();
+					try{
+						e.preventDefault();
+						document.removeEventListener('pushapps.message-received');
+						push.unRegisterDevice(function () {
+															//alert("Your device was unregistered from PushApps");
+														  }, function () {
+															//console.log("error");
+															alert("Error unregistering your device");
+														  });
+						navigator.app.exitApp();
+					}catch(e){
+						alert(e);
+					}
 				}, false);
 			}catch(e){
 				alert(e);
