@@ -83,10 +83,21 @@
     };
 
     document.addEventListener('deviceready', function() {
-       app.init();
+       
+	   app.init();
+	   
+	   // add additional event handlers here ;)
+	   document.addEventListener("resume", function() {
+			app.refeshFromSleep();
+		},false});
+		
+		document.addEventListener("backbutton", function(e){
+			//e.preventDefault();
+			//pushNotification.unregister(successHandler, errorHandler);
+			//navigator.app.exitApp();
+		}, false);
+	   
     }, false);
 	
-	document.addEventListener("resume", function() {
-		app.refeshFromSleep();
-	},false});
+	
 })();
