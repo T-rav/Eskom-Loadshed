@@ -72,7 +72,7 @@
 				document.addEventListener("backbutton", function(e){
 					var push = new PushNotification();
 					document.removeEventListener('pushapps.message-received');
-					PushNotification.unRegisterDevice(function () {
+					push.unRegisterDevice(function () {
 														//alert("Your device was unregistered from PushApps");
 													  }, function () {
 														//console.log("error");
