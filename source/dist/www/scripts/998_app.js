@@ -17,7 +17,7 @@
             var viewService = new ViewService();
             var viewModel = new ViewModel(viewService);
 
-            this.fetchStatus(viewService, viewModel);
+            //this.fetchStatus(viewService, viewModel);
             this.bindApp(viewModel);
 			this.initPushwoosh();
 			
