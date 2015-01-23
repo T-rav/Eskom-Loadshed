@@ -1,28 +1,25 @@
 'use strict';
 (function() {
-    
-    // example usage:
-    // webHelper.openUrl("http://www.google.com")
 
-	var currentStatus = 0;
-	
     var app = {
         init: function() {
 
-			//var waitTime = 600000; // 10 minnutes
-			//var waitTime = 300000; // 5 minutes
-            //var waitTime = 10000;
-		
             this.fixBottomMenuItemsForSmallerScreens();
             var viewService = new ViewService();
             var viewModel = new ViewModel(viewService);
 
-            //this.fetchStatus(viewService, viewModel);
+            this.fetchStatus(viewService, viewModel);
             this.bindApp(viewModel);
-			this.initPushwoosh();
-			
-			//this.activateMonitor(viewModel, waitTime);
+			this.addSleepHandler();
+			this.initGCM();
+			this.deinitGCM();
         },
+		addSleepHandler:function(){
+			 // add additional event handlers here ;)
+		   document.addEventListener("resume", function() {
+				app.refeshFromSleep();
+			},false});
+		},
 		refeshFromSleep:function(){
 			viewModel.polledRefresh();
 		},
@@ -48,56 +45,49 @@
                 bottomList.css("position", "relative");
             }
         },
-		initPushwoosh:function()
+		initGCM:function()
 		{
-			var pushNotification = window.plugins.pushNotification;
-		 
-			//set push notifications handler
-			document.addEventListener('push-notification', function(event) {
-				var title = event.notification.title;
-				var userData = event.notification.userdata;
-				
-				// TODO : Display title in local notification ;)
-				
-				if(typeof(userData) != "undefined") {
-					console.warn('user data: ' + JSON.stringify(userData));
-				}
-											 
-				alert(title);
-			});
-		 
-			//initialize Pushwoosh with projectid: "GOOGLE_PROJECT_NUMBER", appid : "PUSHWOOSH_APP_ID". This will trigger all pending push notifications on start.
-			pushNotification.onDeviceReady({ projectid: "574090421044", appid : "3C3CE-832D1" });
-		 
-			//register for pushes
-			pushNotification.registerDevice(
-				function(status) {
-					var pushToken = status;
-					console.warn('push token: ' + pushToken);
-				},
-				function(status) {
-					console.warn(JSON.stringify(['failed to register ', status]));
-				}
-			);
+			var GOOGLE_PROJECT_ID = "574090421044";
+			var PUSHAPPS_APP_TOKEN = "171dbd2a-7ae1-47b0-a7cd-a5c001d958a1";
+		
+			PushNotification.registerDevice(GOOGLE_PROJECT_ID, PUSHAPPS_APP_TOKEN, function (pushToken) {
+										alert('registerDevice, push token' + pushToken);
+                                    }, function (error) {
+										alert(error);
+                                    });
+	
+			document.removeEventListener('pushapps.message-received');
+			document.addEventListener('pushapps.message-received', function(event) {
+										  var notification = event.notification;
+										  
+										  var devicePlatform = device.platform;
+										  if (devicePlatform === "iOS") {
+											alert("message-received, Message: " + notification.aps.alert + " , D: " + notification.D);
+										  } else {
+											alert("message-received, Message: " + notification.Message + " , Title: " + notification.Title + " , D: " + notification.D);
+										  }
+									  });
+    
+		},
+		deinitGCM:function(){
+			document.addEventListener("backbutton", function(e){
+				document.removeEventListener('pushapps.message-received');
+				PushNotification.unRegisterDevice(function () {
+													alert("Your device was unregistered from PushApps");
+												  }, function () {
+													console.log("error");
+													alert("Error unregistering your device");
+												  });
+			//e.preventDefault();
+			//navigator.app.exitApp();
+			}, false);
 		}
     };
 
     document.addEventListener('deviceready', function() {
-       
 	   app.init();
-	   
-	   // add additional event handlers here ;)
-	   document.addEventListener("resume", function() {
-			app.refeshFromSleep();
-		},false});
-		
-		document.addEventListener("backbutton", function(e){
-			//e.preventDefault();
-			//pushNotification.unregister(successHandler, errorHandler);
-			//navigator.app.exitApp();
-		}, false);
-	   
     }, false);
 	
-	
 })();
+
+
