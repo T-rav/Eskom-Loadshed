@@ -69,6 +69,7 @@
 												//alert("message-received, Message: " + notification.Message + " , Title: " + notification.Title + " , D: " + notification.D);
 											  }
 										  });
+				/*
 				document.addEventListener("backbutton", function(event){
 					try{
 						event.preventDefault();
@@ -84,6 +85,7 @@
 						alert(error);
 					}
 				}, false);
+				*/
 			}catch(e){
 				alert(e);
 			}
