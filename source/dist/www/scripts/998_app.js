@@ -12,7 +12,7 @@
             this.bindApp(viewModel);
 			this.addSleepHandler();
 			this.initGCM();
-			this.deinitGCM();
+			//this.deinitGCM();
         },
 		addSleepHandler:function(){
 			 // add additional event handlers here ;)
@@ -57,7 +57,7 @@
                                     });
 	
 			document.removeEventListener('pushapps.message-received');
-			document.addEventListener('pushapps.message-received', function(event) {
+			document.addEventListener('pushapps.message-received', function(event) { 
 										  var notification = event.notification;
 										  
 										  var devicePlatform = device.platform;
