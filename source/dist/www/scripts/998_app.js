@@ -51,7 +51,7 @@
 			var PUSHAPPS_APP_TOKEN = "171dbd2a-7ae1-47b0-a7cd-a5c001d958a1";
 		
 			PushNotification.registerDevice(GOOGLE_PROJECT_ID, PUSHAPPS_APP_TOKEN, function (pushToken) {
-												alert('registerDevice, push token' + pushToken);
+												console.log('registerDevice, push token' + pushToken);
 											}, function (error) {
 												alert(error);
 											});
@@ -62,9 +62,9 @@
 										  
 										  var devicePlatform = device.platform;
 										  if (devicePlatform === "iOS") {
-											alert("message-received, Message: " + notification.aps.alert + " , D: " + notification.D);
+											console.log("message-received, Message: " + notification.aps.alert + " , D: " + notification.D);
 										  } else {
-											alert("message-received, Message: " + notification.Message + " , Title: " + notification.Title + " , D: " + notification.D);
+											console.log("message-received, Message: " + notification.Message + " , Title: " + notification.Title + " , D: " + notification.D);
 										  }
 									  });
 		
