@@ -1,2 +1,2 @@
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/CordovaLib/ant-build/AndroidManifest.xml : \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/CordovaLib/AndroidManifest.xml \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\CordovaLib\ant-build\AndroidManifest.xml : \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\CordovaLib\AndroidManifest.xml \

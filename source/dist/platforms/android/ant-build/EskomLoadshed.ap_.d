@@ -1,111 +1,115 @@
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/EskomLoadshed.ap_ \
- : /home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/res/drawable-land-mdpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/res/xml/config.xml \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/res/drawable-xhdpi/icon.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/res/drawable-land-xhdpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/res/drawable-ldpi/icon.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/res/drawable-port-hdpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/res/values/strings.xml \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/res/drawable-land-ldpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/res/drawable-hdpi/icon.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/res/drawable-port-xhdpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/res/drawable-mdpi/icon.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/res/drawable-port-mdpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/res/drawable-port-ldpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/res/drawable-land-hdpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/res/drawable/icon.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/res/drawable-land-mdpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/res/drawable-land-xhdpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/res/drawable-ldpi/icon.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/res/drawable-port-hdpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/res/drawable-land-ldpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/res/drawable-hdpi/icon.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/res/drawable-port-xhdpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/res/drawable-mdpi/icon.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/res/drawable-port-mdpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/res/drawable-port-ldpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/res/drawable-land-hdpi/screen.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/res/drawable/icon.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/_where-is-www.txt \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/fonts \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/cordova.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/css \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/index.html \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/scripts \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/cordova_plugins.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/favicon.ico \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/manifest.webapp \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/libs \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/fonts/fontawesome-webfont.svg \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/fonts/glyphicons-halflings-regular.svg \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/fonts/glyphicons-halflings-regular.eot \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/fonts/glyphicons-halflings-regular.ttf \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/fonts/fontawesome-webfont.woff \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/fonts/glyphicons-halflings-regular.woff \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/fonts/fontawesome-webfont.ttf \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/fonts/fontawesome-webfont.eot \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/fonts/FontAwesome.otf \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/fonts/README.txt \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/css/index.css \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/scripts/999_main.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/scripts/viewService.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/scripts/viewModel.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/scripts/001_WebHelper.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/scripts/002_PrefsHelper.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/scripts/998_app.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/icons \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/chevron.svg \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/Eskom.svg \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/touch \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/house-with-power-lines.svg \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/hamburger.svg \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/power_tower.svg \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/refresh.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/icons/placeholder--medium.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/icons/placeholder--small.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/icons/icons.woff \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/icons/icons.eot \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/icons/icons-hinted.ttf \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/icons/placeholder--wide.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/icons/icons.svg \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/icons/icons.ttf \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/icons/icons.woff2 \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/images/touch/192x192.png \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/com.pushapps.phonegap \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/org.apache.cordova.device \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/org.apache.cordova.network-information \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/com.pushapps.phonegap/www \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/com.pushapps.phonegap/www/pushapps.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/network.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/Connection.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/font-awesome.min.css \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/main.css.map \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/custom.css \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/main.css \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/components \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/components.css \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/components.css.map \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/_h5bp.scss \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/bootstrap.min.css \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/main.scss \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/components/_utils.scss \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/components/_normalize.scss \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/components/components.scss \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/components/_themed.scss \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/components/_palette.scss \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/components/_global.scss \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/styles/components/_helper.scss \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/libs/pushapps.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/libs/jquery.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/libs/jquery.peity.min.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/libs/knockout.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/assets/www/libs/bootstrap.min.js \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/AndroidManifest.xml \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\EskomLoadshed.ap_ \
+ : C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\res\drawable\icon.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\res\drawable-hdpi\icon.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\res\drawable-land-hdpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\res\drawable-land-ldpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\res\drawable-land-mdpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\res\drawable-land-xhdpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\res\drawable-ldpi\icon.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\res\drawable-mdpi\icon.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\res\drawable-port-hdpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\res\drawable-port-ldpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\res\drawable-port-mdpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\res\drawable-port-xhdpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\res\drawable-xhdpi\icon.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\res\values\strings.xml \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\res\xml\config.xml \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\res\drawable\icon.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\res\drawable-hdpi\icon.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\res\drawable-land-hdpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\res\drawable-land-ldpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\res\drawable-land-mdpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\res\drawable-land-xhdpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\res\drawable-ldpi\icon.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\res\drawable-mdpi\icon.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\res\drawable-port-hdpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\res\drawable-port-ldpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\res\drawable-port-mdpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\res\drawable-port-xhdpi\screen.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\res\drawable-xhdpi\icon.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\_where-is-www.txt \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\cordova.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\cordova_plugins.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\css \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\favicon.ico \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\index.html \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\index_gcm_test.html \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\manifest.webapp \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\scripts \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\css\index.css \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\fontawesome-webfont.eot \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\fontawesome-webfont.svg \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\fontawesome-webfont.ttf \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\fontawesome-webfont.woff \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\FontAwesome.otf \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\glyphicons-halflings-regular.eot \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\glyphicons-halflings-regular.svg \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\glyphicons-halflings-regular.ttf \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\glyphicons-halflings-regular.woff \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\README.txt \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\chevron.svg \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\Eskom.svg \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\hamburger.svg \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\house-with-power-lines.svg \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\icons \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\power_tower.svg \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\refresh.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\touch \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\icons\icons-hinted.ttf \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\icons\icons.eot \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\icons\icons.svg \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\icons\icons.ttf \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\icons\icons.woff \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\icons\icons.woff2 \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\icons\placeholder--medium.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\icons\placeholder--small.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\icons\placeholder--wide.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\touch\192x192.png \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\js\index.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\bootstrap.min.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\cordova_plugins.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\jquery.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\jquery.peity.min.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\knockout.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\pushapps.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\com.pushapps.phonegap \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.device \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.network-information \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\com.pushapps.phonegap\www \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\com.pushapps.phonegap\www\pushapps.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.device\www \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.device\www\device.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.network-information\www \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.network-information\www\Connection.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.network-information\www\network.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\scripts\001_WebHelper.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\scripts\002_PrefsHelper.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\scripts\998_app.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\scripts\999_main.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\scripts\viewModel.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\scripts\viewService.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\bootstrap.min.css \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\components \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\components.css \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\components.css.map \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\custom.css \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\font-awesome.min.css \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\main.css \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\main.css.map \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\main.scss \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\_h5bp.scss \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\components\components.scss \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\components\_global.scss \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\components\_helper.scss \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\components\_normalize.scss \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\components\_palette.scss \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\components\_themed.scss \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\components\_utils.scss \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\AndroidManifest.xml \

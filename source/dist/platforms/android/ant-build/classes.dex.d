@@ -1,34 +1,20 @@
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes.dex : \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/LocalNotification$3.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/Options.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/LocalNotification$5.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/LocalNotification$1.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/LocalNotification$4.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/ReceiverActivity.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/LocalNotification.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/Restore.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/Receiver.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/de/appplant/cordova/plugin/localnotification/LocalNotification$2.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/pushapps/phonegap/PushAppsPlugin$2.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/pushapps/phonegap/PushAppsPlugin.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/pushapps/phonegap/PushAppsPlugin$4.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/pushapps/phonegap/PushAppsPlugin$3.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/pushapps/phonegap/PushAppsPlugin$1.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/stoneagetechnologies/eskomloadshed/R.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/stoneagetechnologies/eskomloadshed/R$string.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/stoneagetechnologies/eskomloadshed/R$attr.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/stoneagetechnologies/eskomloadshed/BuildConfig.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/stoneagetechnologies/eskomloadshed/Manifest$permission.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/stoneagetechnologies/eskomloadshed/R$xml.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/stoneagetechnologies/eskomloadshed/R$drawable.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/stoneagetechnologies/eskomloadshed/EskomLoadshed.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/stoneagetechnologies/eskomloadshed/Manifest.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/plugin/gcm/CordovaGCMBroadcastReceiver.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/plugin/gcm/GCMIntentService.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/plugin/gcm/PushPlugin.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/com/plugin/gcm/PushHandlerActivity.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager$1.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager.class \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/dexedLibs/classes-30a6f397044f13b47f702bb6868d4e9c.jar \
-/home/travisf/bitbucket/eskom-loadshed/source/dist/platforms/android/ant-build/dexedLibs/pushapps-6e1a6cee2a455011218176e9c8c3daad.jar \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes.dex : \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\pushapps\phonegap\PushAppsPlugin$1.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\pushapps\phonegap\PushAppsPlugin$2.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\pushapps\phonegap\PushAppsPlugin$3.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\pushapps\phonegap\PushAppsPlugin$4.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\pushapps\phonegap\PushAppsPlugin.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\eskomloadshed\BuildConfig.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\eskomloadshed\EskomLoadshed.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\eskomloadshed\Manifest$permission.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\eskomloadshed\Manifest.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\eskomloadshed\R$attr.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\eskomloadshed\R$drawable.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\eskomloadshed\R$string.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\eskomloadshed\R$xml.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\eskomloadshed\R.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\org\apache\cordova\device\Device.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\org\apache\cordova\networkinformation\NetworkManager$1.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\org\apache\cordova\networkinformation\NetworkManager.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\dexedLibs\classes-c28a5b3db8d896f46346519d7cc526f6.jar \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\dexedLibs\pushapps-1c56633044732e95a1ec57f6eb681170.jar \
