@@ -37,7 +37,6 @@ C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\index.html \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\index_gcm_test.html \
-C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\js \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\manifest.webapp \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins \
@@ -72,13 +71,11 @@ C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\image
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\icons\placeholder--small.png \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\icons\placeholder--wide.png \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\touch\192x192.png \
-C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\js\index.js \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\bootstrap.min.js \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\cordova_plugins.js \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\jquery.js \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\jquery.peity.min.js \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\knockout.js \
-C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\pushapps.js \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\com.pushapps.phonegap \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.device \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.network-information \
