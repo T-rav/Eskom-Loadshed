@@ -24,3 +24,14 @@ CREATE TABLE municipality(
 	id int,
 	UNIQUE(value)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+-- create the city table
+CREATE TABLE city(
+	rID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	province varchar(20),
+	municipality varchar(80),
+	name varchar(80),
+	id int,
+	UNIQUE(id)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
