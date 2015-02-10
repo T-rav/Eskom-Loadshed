@@ -1,0 +1,26 @@
+CREATE USER 'loadshed'@'localhost' IDENTIFIED BY 'FU#kESK0m$zx!';
+GRANT ALL PRIVILEGES ON *.* TO 'loadshed'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+// create the root loadshed table
+CREATE TABLE loadshed(
+	rID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	subPlaceName varchar(80) DEFAULT NULL,
+	zoneId int,
+	zoneName varchar(50),
+	supplierName varchar(40) DEFAULT NULL,
+	placeName varchar(80),
+	province varchar(50),
+	srcLastUpdateTs datetime,
+	srcName varchar(10) DEFAULT NULL,
+	UNIQUE(zoneId)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- create the municipality table for eskom source data
+CREATE TABLE municipality(
+	rID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	province varchar(50),
+	value varchar(80),
+	id int,
+	UNIQUE(value)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;

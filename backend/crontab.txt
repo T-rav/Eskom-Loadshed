@@ -1,0 +1,2 @@
+*/15 6-21 * * * /home/travisf/eskomStatus.sh
+* 5 * * * /home/travisf/eskom/resetMorningMessage.sh
