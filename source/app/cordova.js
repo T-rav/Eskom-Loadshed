@@ -13,6 +13,11 @@
                 if (!hasScriptTagForCordova()) {
                     addCordovaJs();
                 } else {
+					if(navigator.connection === undefined){
+						navigator = {};
+						navigator.connection = {};
+					}
+				
                     if (window.cordova === undefined) {
                         window.cordova = {
                         };
@@ -29,11 +34,6 @@
                             }
                         }, 50);
                     }
-					
-					//add network state mock
-					if(navigator.connection == undefined){
-						navigator.connection = {};
-					}
                 }
                 return true;
             }

@@ -29,3 +29,17 @@
 .newsHeadline{margin-left:0px; margin-top:-10px; background-color:#52ADC8;}
 .marketHeadline{margin-left:0px; margin-top:-10px; background-color:#3498db; color:#fff;}
 .backgroundAdjust{background-color:#ecf0f1;}
+@media screen and (max-width: 500px) {
+	.powerlines{position:fixed;top:60%;left:15%;}
+	.status{position:fixed;top:15%;left:15%;}
+	.powerlineImg{height:100%; width:100%}
+	.aboutScreen{margin-left:5%; width:90%;}
+	.aboutFooter{position:absolute; bottom:25px; left:5%}
+}
+@media screen and (min-width: 501px) {
+	.powerlines{position:fixed;top:55%;left:30%;}
+	.status{position:fixed;top:10%;left:35%;}
+	.powerlineImg{height:40%; width:60%}
+	.aboutScreen{margin-left:20%; width:60%;}
+	.aboutFooter{position:absolute; bottom:40px; left:20%}
+}

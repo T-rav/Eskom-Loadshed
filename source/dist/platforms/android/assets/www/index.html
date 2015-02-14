@@ -14,17 +14,12 @@
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Crypto Stats">
+    <meta name="apple-mobile-web-app-title" content="SA Loadshed">
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
 
     <!-- Page styles -->
 	<link href="styles/bootstrap.min.css" rel="stylesheet">
@@ -64,28 +59,17 @@
 					</h4>
 				</div>
 			</div>
-
-			<!--
-			<div id="schedule">
-				<div class="navbar-header">
-					<h4 id="schedulesId" class="navbar-brand">
-						<b>Schedule</b>
-					</h4>
-				</div>
-			</div>
-			-->
-
 		</div>
 		
 		<main class="main-container">
-			<span style="position:fixed;top:20%;left:15%;">
+			<span class="status">
 				<h2><strong>Loadshed</strong> Status </h2>
 				<div data-bind="css: color">
 				  <h5 style="margin-left:3px; margin-top:10px; text-align:center;" data-bind="text:message"></h5>
 				</div>
 			</span>
-			<span style="position:fixed;top:60%;left:15%;">
-				<img src="images/house-with-power-lines.svg" height="20%" width="90%"/>
+			<span class="powerlines">
+				<img src="images/house-with-power-lines.svg" class="powerlineImg" />
 			</span>
 		</main>
 
@@ -98,18 +82,23 @@
 			<br/>
 			<h4 data-bind="click: closeAbout">
 				<span><img src="images/chevron.svg" height="25" width="20" /></span> 
-				About <strong>Loadshed</strong>
+				About SA <strong>Loadshed</strong>
 			</h4>
 			<hr/>
 		</header>
-		<div style="margin-left:5%; width:90%;">
+		<div class="aboutScreen">
 			<strong>Monitors</strong> Eskom's load shedding <strong>status</strong> and <strong>notifies</strong> you when it changes.
 			<br/><br/>
-			This app was listed under Eskom Loadshed.
+			This <strong>app was listed under the name Eskom Loadshed until Google removed it. </strong> 
+			<br/> <br/>
+			It has been re-released under SA Loadshed to avoid keeping anyone in the dark about the load shedding status.
 			<br/><br/><br/>
 			<img src="images/power_tower.svg" height="100" width="90%"/>
-			<br/><br/><br/>
-			Developed by <strong>StoneAge</strong> technologies.
+			<span class="aboutFooter">
+				Developed by <strong>StoneAge</strong> Technologies. 
+				<br/>
+				<strong>And still not endorsed by Eskom.</strong>
+			</span>
 		</div>
     </div>
 		
