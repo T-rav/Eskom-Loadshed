@@ -29,7 +29,7 @@
                 "parents": {
                     "/manifest": [
                         {
-                            "xml": "<permission android:name=\"com.stoneagetechnologies.eskomloadshed.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
+                            "xml": "<permission android:name=\"com.stoneagetechnologies.saloadshed.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
                             "count": 1
                         },
                         {
@@ -57,13 +57,13 @@
                             "count": 1
                         },
                         {
-                            "xml": "<uses-permission android:name=\"com.stoneagetechnologies.eskomloadshed.permission.C2D_MESSAGE\" />",
+                            "xml": "<uses-permission android:name=\"com.stoneagetechnologies.saloadshed.permission.C2D_MESSAGE\" />",
                             "count": 1
                         }
                     ],
                     "/manifest/application": [
                         {
-                            "xml": "<receiver android:name=\"com.groboot.pushapps.GCMBroadcastReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><action android:name=\"com.google.android.c2dm.intent.REGISTRATION\" /><category android:name=\"com.stoneagetechnologies.eskomloadshed\" /></intent-filter></receiver>",
+                            "xml": "<receiver android:name=\"com.groboot.pushapps.GCMBroadcastReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><action android:name=\"com.google.android.c2dm.intent.REGISTRATION\" /><category android:name=\"com.stoneagetechnologies.saloadshed\" /></intent-filter></receiver>",
                             "count": 1
                         },
                         {
@@ -83,7 +83,7 @@
                     ],
                     "/manifest/application/activity": [
                         {
-                            "xml": "<intent-filter><action android:name=\"com.stoneagetechnologies.eskomloadshed.MESSAGE\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
+                            "xml": "<intent-filter><action android:name=\"com.stoneagetechnologies.saloadshed.MESSAGE\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
                             "count": 1
                         }
                     ]
@@ -103,13 +103,13 @@
     },
     "installed_plugins": {
         "org.apache.cordova.network-information": {
-            "PACKAGE_NAME": "com.stoneagetechnologies.eskomloadshed"
+            "PACKAGE_NAME": "com.stoneagetechnologies.saloadshed"
         },
         "org.apache.cordova.device": {
-            "PACKAGE_NAME": "com.stoneagetechnologies.eskomloadshed"
+            "PACKAGE_NAME": "com.stoneagetechnologies.saloadshed"
         },
         "com.pushapps.phonegap": {
-            "PACKAGE_NAME": "com.stoneagetechnologies.eskomloadshed"
+            "PACKAGE_NAME": "com.stoneagetechnologies.saloadshed"
         }
     },
     "dependent_plugins": {}

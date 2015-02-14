@@ -13,6 +13,16 @@ C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classe
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\eskomloadshed\R$string.class \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\eskomloadshed\R$xml.class \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\eskomloadshed\R.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\eskomloadshed\SALoadshed.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\saloadshed\BuildConfig.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\saloadshed\EskomLoadshed.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\saloadshed\Manifest$permission.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\saloadshed\Manifest.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\saloadshed\R$attr.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\saloadshed\R$drawable.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\saloadshed\R$string.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\saloadshed\R$xml.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\saloadshed\R.class \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\org\apache\cordova\device\Device.class \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\org\apache\cordova\networkinformation\NetworkManager$1.class \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\org\apache\cordova\networkinformation\NetworkManager.class \

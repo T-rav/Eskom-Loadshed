@@ -40,7 +40,7 @@
 	
 	function logCurrentStatus($status){
 		// get a timestamp for later :)
-		date_default_timezone_set('Africa/Nairobi');
+		date_default_timezone_set('Africa/Johannesburg');
 		$date = date('Y-m-d_H:i:s');
 		$value = $status."::".$date."\n";
 		

@@ -14,7 +14,10 @@
    id="svg3020"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="feature_graphic.svg"
+   inkscape:export-filename="C:\Projects\Eskom - Load Shedding\feature_graphic.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs3022" />
   <sodipodi:namedview
@@ -178,5 +181,5 @@
            x="54.285713"
            y="397.14285" /></flowRegion><flowPara
          id="flowPara3109"
-         style="font-size:40px;fill:#214478">Eskom Loadshed - Get notified.</flowPara></flowRoot>  </g>
+         style="font-size:40px;fill:#214478">SA Loadshed - Get notified.</flowPara></flowRoot>  </g>
 </svg>
