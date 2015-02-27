@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.stoneagetechnologies.eskomloadshed;
+package com.stoneagetechnologies.saloadshed;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
