@@ -23,6 +23,7 @@ C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classe
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\saloadshed\R$string.class \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\saloadshed\R$xml.class \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\saloadshed\R.class \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\com\stoneagetechnologies\saloadshed\SALoadshed.class \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\org\apache\cordova\device\Device.class \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\org\apache\cordova\networkinformation\NetworkManager$1.class \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\ant-build\classes\org\apache\cordova\networkinformation\NetworkManager.class \

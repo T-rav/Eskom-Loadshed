@@ -42,6 +42,7 @@ C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugi
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\scripts \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\css\index.css \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\1YwB1sO8YE1Lyjf12WNiUA.woff2 \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\fontawesome-webfont.eot \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\fontawesome-webfont.svg \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\fontawesome-webfont.ttf \
@@ -51,9 +52,13 @@ C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\glyphicons-halflings-regular.svg \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\glyphicons-halflings-regular.ttf \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\glyphicons-halflings-regular.woff \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\H2DMvhDLycM56KNuAtbJYA.woff2 \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\ObQr5XYcoH0WBoUxiaYK3_Y6323mHUZFJMgTvxaG2iE.woff2 \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\PLygLKRVCQnA5fhu3qk5fQ.woff2 \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\README.txt \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\UyBMtLsHKBKXelqf4x7VRQ.woff2 \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\YMOYVM-eg6Qs9YzV9OSqZfesZW2xOQ-xsNqO47m55DA.woff2 \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\chevron.svg \
-C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\Eskom.svg \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\hamburger.svg \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\house-with-power-lines.svg \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\icons \
@@ -75,7 +80,6 @@ C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\jquery.js \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\jquery.peity.min.js \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\knockout.js \
-C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\pushapps.js \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\com.pushapps.phonegap \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.device \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.network-information \
@@ -98,6 +102,7 @@ C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\style
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\components.css.map \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\custom.css \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\font-awesome.min.css \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\fonts.css \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\main.css \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\main.css.map \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\styles\main.scss \
