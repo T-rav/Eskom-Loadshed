@@ -7,6 +7,14 @@
 	$currentStatus = getCurrentStatus();
 	$prevStatus = getPrevStatus();
 	
+	if($currentStatus < 0){
+		$currentStatus = 0;
+	}
+	
+	if($prevStatus < 0){
+		$prevStatus = 0;
+	}
+	
 	$oldKey = 'd13bcaf0-d7dc-483e-8b17-8dc3a22e5e85';
 	$newKey = '2f96b0ad-db36-453b-ab98-196a90e59400';
 	
@@ -54,7 +62,7 @@
 		$url = "http://loadshedding.eskom.co.za/LoadShedding/GetStatus";
 		$data = fetchData($url);
 		$data = $data - 1;
-		
+
 		return $data;
 	}
 	
