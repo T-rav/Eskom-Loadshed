@@ -59,6 +59,7 @@ C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\UyBMtLsHKBKXelqf4x7VRQ.woff2 \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\fonts\YMOYVM-eg6Qs9YzV9OSqZfesZW2xOQ-xsNqO47m55DA.woff2 \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\chevron.svg \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\Eskom.svg \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\hamburger.svg \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\house-with-power-lines.svg \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\images\icons \
@@ -80,6 +81,7 @@ C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\jquery.js \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\jquery.peity.min.js \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\knockout.js \
+C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\libs\pushapps.js \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\com.pushapps.phonegap \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.device \
 C:\Projects\Eskom - Load Shedding\source\dist\platforms\android\assets\www\plugins\org.apache.cordova.network-information \

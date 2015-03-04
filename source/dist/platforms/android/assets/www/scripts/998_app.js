@@ -47,8 +47,12 @@
         },
 		initGCM:function()
 		{
-			var GOOGLE_PROJECT_ID = "574090421044";
-			var PUSHAPPS_APP_TOKEN = "171dbd2a-7ae1-47b0-a7cd-a5c001d958a1";
+			// OLD
+			//var GOOGLE_PROJECT_ID = "574090421044";
+			//var PUSHAPPS_APP_TOKEN = "171dbd2a-7ae1-47b0-a7cd-a5c001d958a1";
+			
+			var GOOGLE_PROJECT_ID = "946436675908";
+			var PUSHAPPS_APP_TOKEN = "ae5d7ad2-6e9f-4fde-b8a8-689605f11636";
 		
 			PushNotification.registerDevice(GOOGLE_PROJECT_ID, PUSHAPPS_APP_TOKEN, function (pushToken) {
 												console.log('registerDevice, push token' + pushToken);
