@@ -10,7 +10,7 @@
 
             this.fetchStatus(viewService, viewModel);
             this.bindApp(viewModel);
-			this.addSleepHandler();
+			//this.addSleepHandler();
 			
 			this.initGCM();
         },
