@@ -12,7 +12,7 @@
             this.bindApp(viewModel);
 			this.addSleepHandler();
 			
-			//this.initGCM();
+			this.initGCM();
         },
 		addSleepHandler:function(){
 			 // add additional event handlers here ;)
